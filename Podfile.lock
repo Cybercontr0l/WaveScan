@@ -1,0 +1,31 @@
+PODS:
+  - lottie-ios (4.5.1)
+  - MMLanScan (3.0.0)
+
+DEPENDENCIES:
+  - lottie-ios (from `https://github.com/airbnb/lottie-ios.git`, branch `master`)
+  - MMLanScan
+
+SPEC REPOS:
+  trunk:
+    - MMLanScan
+
+EXTERNAL SOURCES:
+  lottie-ios:
+    :branch: master
+    :git: https://github.com/airbnb/lottie-ios.git
+    :submodules: true
+
+CHECKOUT OPTIONS:
+  lottie-ios:
+    :commit: 5bf447304d553980d42a6854d165e94c62126b59
+    :git: https://github.com/airbnb/lottie-ios.git
+    :submodules: true
+
+SPEC CHECKSUMS:
+  lottie-ios: 248b380fa1b97d18e792c37d90da7ab2aa0d6562
+  MMLanScan: 86a0f77edbf163be30c1f58321469c7c8ce4c50e
+
+PODFILE CHECKSUM: f072993c1d7f78748cac5cbd00487aede3e08a06
+
+COCOAPODS: 1.16.2

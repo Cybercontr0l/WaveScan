@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:WaveScan/CoreData/ScanSessionEntity+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:WaveScan/CoreData/ScanSessionEntity+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
+      location = "group:WaveScan/CoreData/LANEntity+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:WaveScan/CoreData/LANEntity+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
+      location = "group:WaveScan/CoreData/BluetoothEntity+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:WaveScan/CoreData/BluetoothEntity+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
+      location = "group:WaveScan/CoreData/Item+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:WaveScan/CoreData/Item+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
+      location = "group:WaveScan.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>

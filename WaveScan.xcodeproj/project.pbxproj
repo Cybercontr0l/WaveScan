@@ -1,0 +1,618 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		512298642D5E7990000E758E /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512298632D5E7990000E758E /* LaunchScreenView.swift */; };
+		512298782D5E801C000E758E /* scanning_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 512298762D5E801C000E758E /* scanning_animation.json */; };
+		5122987B2D5E8680000E758E /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5122987A2D5E8680000E758E /* TabBarView.swift */; };
+		5122987D2D5E9F0F000E758E /* flying_dots.json in Resources */ = {isa = PBXBuildFile; fileRef = 5122987C2D5E9F0F000E758E /* flying_dots.json */; };
+		512298832D5EAB06000E758E /* historytab.json in Resources */ = {isa = PBXBuildFile; fileRef = 512298822D5EAB06000E758E /* historytab.json */; };
+		514EC8892D5F6A1E0084D8F8 /* launch_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 514EC8882D5F6A1E0084D8F8 /* launch_animation.json */; };
+		514EC88B2D5F6C870084D8F8 /* ScanSessionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514EC88A2D5F6C870084D8F8 /* ScanSessionDetailView.swift */; };
+		514EC88D2D5F92740084D8F8 /* WiFiMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514EC88C2D5F92740084D8F8 /* WiFiMonitor.swift */; };
+		5166B9362D5C9C4B00720790 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5166B9352D5C9C4B00720790 /* LottieView.swift */; };
+		518A97B42D5A936E004AD264 /* WaveScanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518A97B32D5A936E004AD264 /* WaveScanApp.swift */; };
+		518A97B82D5A936F004AD264 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 518A97B72D5A936F004AD264 /* Assets.xcassets */; };
+		518A97BB2D5A936F004AD264 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 518A97BA2D5A936F004AD264 /* Preview Assets.xcassets */; };
+		518A97BD2D5A936F004AD264 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518A97BC2D5A936F004AD264 /* Persistence.swift */; };
+		518A97C02D5A936F004AD264 /* DeviceDatabase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 518A97BE2D5A936F004AD264 /* DeviceDatabase.xcdatamodeld */; };
+		51AA74B22D5A959E000873FF /* LANScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AA74B12D5A959E000873FF /* LANScannerViewModel.swift */; };
+		51AA74B62D5A9608000873FF /* BluetoothDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AA74B52D5A9608000873FF /* BluetoothDevice.swift */; };
+		51AA74B82D5A9613000873FF /* LANDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AA74B72D5A9613000873FF /* LANDevice.swift */; };
+		51AA74BA2D5A961C000873FF /* ScanSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AA74B92D5A961C000873FF /* ScanSession.swift */; };
+		51AA74BC2D5A9639000873FF /* BluetoothScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AA74BB2D5A9639000873FF /* BluetoothScannerViewModel.swift */; };
+		51AA74BE2D5A964B000873FF /* ScanHistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AA74BD2D5A964B000873FF /* ScanHistoryViewModel.swift */; };
+		51AA74C02D5A9658000873FF /* DeviceDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AA74BF2D5A9658000873FF /* DeviceDetailViewModel.swift */; };
+		51AA74C22D5A966E000873FF /* BluetoothScannerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AA74C12D5A966E000873FF /* BluetoothScannerService.swift */; };
+		51AA74C42D5A9675000873FF /* LANScannerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AA74C32D5A9675000873FF /* LANScannerService.swift */; };
+		51AA74C62D5A967D000873FF /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AA74C52D5A967D000873FF /* DatabaseService.swift */; };
+		51AA74C82D5A96B8000873FF /* MainScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AA74C72D5A96B8000873FF /* MainScanView.swift */; };
+		51AA74CC2D5A96C8000873FF /* ScanHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AA74CB2D5A96C8000873FF /* ScanHistoryView.swift */; };
+		51AA74CE2D5A96CE000873FF /* DeviceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AA74CD2D5A96CE000873FF /* DeviceDetailView.swift */; };
+		51BB5DF22D5D5C080049732C /* Pods_WaveScan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D887EEDF997B1B7DA7A244 /* Pods_WaveScan.framework */; };
+		51BB5DF32D5D5C080049732C /* Pods_WaveScan.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 04D887EEDF997B1B7DA7A244 /* Pods_WaveScan.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		51FB61A02D5B4F040085C594 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				51BB5DF32D5D5C080049732C /* Pods_WaveScan.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		04D887EEDF997B1B7DA7A244 /* Pods_WaveScan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WaveScan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		272AF8FFB60BE51A07CADB35 /* Pods-WaveScan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaveScan.release.xcconfig"; path = "Target Support Files/Pods-WaveScan/Pods-WaveScan.release.xcconfig"; sourceTree = "<group>"; };
+		5106A4BA2D5D72CA00053BC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		512298632D5E7990000E758E /* LaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
+		512298762D5E801C000E758E /* scanning_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = scanning_animation.json; path = WaveScan/scanning_animation.json; sourceTree = SOURCE_ROOT; };
+		5122987A2D5E8680000E758E /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		5122987C2D5E9F0F000E758E /* flying_dots.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = flying_dots.json; sourceTree = "<group>"; };
+		512298822D5EAB06000E758E /* historytab.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = historytab.json; sourceTree = "<group>"; };
+		514EC8882D5F6A1E0084D8F8 /* launch_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = launch_animation.json; sourceTree = "<group>"; };
+		514EC88A2D5F6C870084D8F8 /* ScanSessionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanSessionDetailView.swift; sourceTree = "<group>"; };
+		514EC88C2D5F92740084D8F8 /* WiFiMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiFiMonitor.swift; sourceTree = "<group>"; };
+		5166B9352D5C9C4B00720790 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		518A97B02D5A936E004AD264 /* WaveScan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaveScan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		518A97B32D5A936E004AD264 /* WaveScanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveScanApp.swift; sourceTree = "<group>"; };
+		518A97B72D5A936F004AD264 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		518A97BA2D5A936F004AD264 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		518A97BC2D5A936F004AD264 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		518A97BF2D5A936F004AD264 /* WaveScan.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WaveScan.xcdatamodel; sourceTree = "<group>"; };
+		51AA74B12D5A959E000873FF /* LANScannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LANScannerViewModel.swift; sourceTree = "<group>"; };
+		51AA74B52D5A9608000873FF /* BluetoothDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothDevice.swift; sourceTree = "<group>"; };
+		51AA74B72D5A9613000873FF /* LANDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LANDevice.swift; sourceTree = "<group>"; };
+		51AA74B92D5A961C000873FF /* ScanSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanSession.swift; sourceTree = "<group>"; };
+		51AA74BB2D5A9639000873FF /* BluetoothScannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothScannerViewModel.swift; sourceTree = "<group>"; };
+		51AA74BD2D5A964B000873FF /* ScanHistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanHistoryViewModel.swift; sourceTree = "<group>"; };
+		51AA74BF2D5A9658000873FF /* DeviceDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDetailViewModel.swift; sourceTree = "<group>"; };
+		51AA74C12D5A966E000873FF /* BluetoothScannerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothScannerService.swift; sourceTree = "<group>"; };
+		51AA74C32D5A9675000873FF /* LANScannerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LANScannerService.swift; sourceTree = "<group>"; };
+		51AA74C52D5A967D000873FF /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
+		51AA74C72D5A96B8000873FF /* MainScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScanView.swift; sourceTree = "<group>"; };
+		51AA74CB2D5A96C8000873FF /* ScanHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanHistoryView.swift; sourceTree = "<group>"; };
+		51AA74CD2D5A96CE000873FF /* DeviceDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDetailView.swift; sourceTree = "<group>"; };
+		51B05EA32D5D344D00F0DF2D /* WaveScan-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WaveScan-Bridging-Header.h"; sourceTree = "<group>"; };
+		51BB5DEF2D5D5C050049732C /* MMLanScan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MMLanScan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCACC04EDDB71EDD3B0B64A1 /* Pods-WaveScan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaveScan.debug.xcconfig"; path = "Target Support Files/Pods-WaveScan/Pods-WaveScan.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		518A97AD2D5A936E004AD264 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51BB5DF22D5D5C080049732C /* Pods_WaveScan.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		33DE828A7EFF3970C9B36F55 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FCACC04EDDB71EDD3B0B64A1 /* Pods-WaveScan.debug.xcconfig */,
+				272AF8FFB60BE51A07CADB35 /* Pods-WaveScan.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5122986D2D5E7FB1000E758E /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		518A97A72D5A936E004AD264 = {
+			isa = PBXGroup;
+			children = (
+				51B05EA32D5D344D00F0DF2D /* WaveScan-Bridging-Header.h */,
+				518A97B22D5A936E004AD264 /* WaveScan */,
+				518A97B12D5A936E004AD264 /* Products */,
+				33DE828A7EFF3970C9B36F55 /* Pods */,
+				78F9C0729A2A941297868808 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		518A97B12D5A936E004AD264 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				518A97B02D5A936E004AD264 /* WaveScan.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		518A97B22D5A936E004AD264 /* WaveScan */ = {
+			isa = PBXGroup;
+			children = (
+				5106A4BA2D5D72CA00053BC0 /* Info.plist */,
+				51AA74B02D5A953F000873FF /* M */,
+				51AA74AF2D5A953E000873FF /* V */,
+				51AA74AE2D5A953B000873FF /* VM */,
+				51AA74AD2D5A9537000873FF /* S */,
+				518A97B32D5A936E004AD264 /* WaveScanApp.swift */,
+				5122986D2D5E7FB1000E758E /* CoreData */,
+				518A97B72D5A936F004AD264 /* Assets.xcassets */,
+				5122987C2D5E9F0F000E758E /* flying_dots.json */,
+				514EC8882D5F6A1E0084D8F8 /* launch_animation.json */,
+				512298822D5EAB06000E758E /* historytab.json */,
+				512298762D5E801C000E758E /* scanning_animation.json */,
+				518A97BC2D5A936F004AD264 /* Persistence.swift */,
+				518A97BE2D5A936F004AD264 /* DeviceDatabase.xcdatamodeld */,
+				518A97B92D5A936F004AD264 /* Preview Content */,
+			);
+			path = WaveScan;
+			sourceTree = "<group>";
+		};
+		518A97B92D5A936F004AD264 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				518A97BA2D5A936F004AD264 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		51AA74AD2D5A9537000873FF /* S */ = {
+			isa = PBXGroup;
+			children = (
+				51AA74C12D5A966E000873FF /* BluetoothScannerService.swift */,
+				51AA74C32D5A9675000873FF /* LANScannerService.swift */,
+				51AA74C52D5A967D000873FF /* DatabaseService.swift */,
+				514EC88C2D5F92740084D8F8 /* WiFiMonitor.swift */,
+			);
+			path = S;
+			sourceTree = "<group>";
+		};
+		51AA74AE2D5A953B000873FF /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				51AA74BB2D5A9639000873FF /* BluetoothScannerViewModel.swift */,
+				51AA74B12D5A959E000873FF /* LANScannerViewModel.swift */,
+				51AA74BD2D5A964B000873FF /* ScanHistoryViewModel.swift */,
+				51AA74BF2D5A9658000873FF /* DeviceDetailViewModel.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		51AA74AF2D5A953E000873FF /* V */ = {
+			isa = PBXGroup;
+			children = (
+				51AA74C72D5A96B8000873FF /* MainScanView.swift */,
+				51AA74CB2D5A96C8000873FF /* ScanHistoryView.swift */,
+				514EC88A2D5F6C870084D8F8 /* ScanSessionDetailView.swift */,
+				51AA74CD2D5A96CE000873FF /* DeviceDetailView.swift */,
+				5166B9352D5C9C4B00720790 /* LottieView.swift */,
+				512298632D5E7990000E758E /* LaunchScreenView.swift */,
+				5122987A2D5E8680000E758E /* TabBarView.swift */,
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		51AA74B02D5A953F000873FF /* M */ = {
+			isa = PBXGroup;
+			children = (
+				51AA74B52D5A9608000873FF /* BluetoothDevice.swift */,
+				51AA74B72D5A9613000873FF /* LANDevice.swift */,
+				51AA74B92D5A961C000873FF /* ScanSession.swift */,
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		78F9C0729A2A941297868808 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				51BB5DEF2D5D5C050049732C /* MMLanScan.framework */,
+				04D887EEDF997B1B7DA7A244 /* Pods_WaveScan.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		518A97AF2D5A936E004AD264 /* WaveScan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 518A97C32D5A936F004AD264 /* Build configuration list for PBXNativeTarget "WaveScan" */;
+			buildPhases = (
+				12E527DEBFC1C84233EE82BD /* [CP] Check Pods Manifest.lock */,
+				518A97AC2D5A936E004AD264 /* Sources */,
+				518A97AD2D5A936E004AD264 /* Frameworks */,
+				518A97AE2D5A936E004AD264 /* Resources */,
+				51FB61A02D5B4F040085C594 /* Embed Frameworks */,
+				EB53A1ABC1077E1013375B93 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WaveScan;
+			productName = WaveScan;
+			productReference = 518A97B02D5A936E004AD264 /* WaveScan.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		518A97A82D5A936E004AD264 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					518A97AF2D5A936E004AD264 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 518A97AB2D5A936E004AD264 /* Build configuration list for PBXProject "WaveScan" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 518A97A72D5A936E004AD264;
+			productRefGroup = 518A97B12D5A936E004AD264 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				518A97AF2D5A936E004AD264 /* WaveScan */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		518A97AE2D5A936E004AD264 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				512298832D5EAB06000E758E /* historytab.json in Resources */,
+				518A97BB2D5A936F004AD264 /* Preview Assets.xcassets in Resources */,
+				5122987D2D5E9F0F000E758E /* flying_dots.json in Resources */,
+				518A97B82D5A936F004AD264 /* Assets.xcassets in Resources */,
+				512298782D5E801C000E758E /* scanning_animation.json in Resources */,
+				514EC8892D5F6A1E0084D8F8 /* launch_animation.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		12E527DEBFC1C84233EE82BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WaveScan-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB53A1ABC1077E1013375B93 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WaveScan/Pods-WaveScan-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WaveScan/Pods-WaveScan-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WaveScan/Pods-WaveScan-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		518A97AC2D5A936E004AD264 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				514EC88B2D5F6C870084D8F8 /* ScanSessionDetailView.swift in Sources */,
+				518A97BD2D5A936F004AD264 /* Persistence.swift in Sources */,
+				51AA74C82D5A96B8000873FF /* MainScanView.swift in Sources */,
+				51AA74CE2D5A96CE000873FF /* DeviceDetailView.swift in Sources */,
+				518A97C02D5A936F004AD264 /* DeviceDatabase.xcdatamodeld in Sources */,
+				5166B9362D5C9C4B00720790 /* LottieView.swift in Sources */,
+				51AA74B62D5A9608000873FF /* BluetoothDevice.swift in Sources */,
+				51AA74C02D5A9658000873FF /* DeviceDetailViewModel.swift in Sources */,
+				51AA74CC2D5A96C8000873FF /* ScanHistoryView.swift in Sources */,
+				51AA74C62D5A967D000873FF /* DatabaseService.swift in Sources */,
+				51AA74C22D5A966E000873FF /* BluetoothScannerService.swift in Sources */,
+				51AA74BA2D5A961C000873FF /* ScanSession.swift in Sources */,
+				51AA74BC2D5A9639000873FF /* BluetoothScannerViewModel.swift in Sources */,
+				51AA74B82D5A9613000873FF /* LANDevice.swift in Sources */,
+				512298642D5E7990000E758E /* LaunchScreenView.swift in Sources */,
+				5122987B2D5E8680000E758E /* TabBarView.swift in Sources */,
+				51AA74BE2D5A964B000873FF /* ScanHistoryViewModel.swift in Sources */,
+				518A97B42D5A936E004AD264 /* WaveScanApp.swift in Sources */,
+				514EC88D2D5F92740084D8F8 /* WiFiMonitor.swift in Sources */,
+				51AA74C42D5A9675000873FF /* LANScannerService.swift in Sources */,
+				51AA74B22D5A959E000873FF /* LANScannerViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		518A97C12D5A936F004AD264 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = XR8AVPK98Z;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				EXCLUDED_ARCHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		518A97C22D5A936F004AD264 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = XR8AVPK98Z;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				EXCLUDED_ARCHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		518A97C42D5A936F004AD264 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCACC04EDDB71EDD3B0B64A1 /* Pods-WaveScan.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WaveScan/Preview Content\"";
+				DEVELOPMENT_TEAM = XR8AVPK98Z;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = WaveScan/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.WaveScan";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/WaveScan-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		518A97C52D5A936F004AD264 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 272AF8FFB60BE51A07CADB35 /* Pods-WaveScan.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WaveScan/Preview Content\"";
+				DEVELOPMENT_TEAM = XR8AVPK98Z;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = WaveScan/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.WaveScan";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/WaveScan-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		518A97AB2D5A936E004AD264 /* Build configuration list for PBXProject "WaveScan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				518A97C12D5A936F004AD264 /* Debug */,
+				518A97C22D5A936F004AD264 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		518A97C32D5A936F004AD264 /* Build configuration list for PBXNativeTarget "WaveScan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				518A97C42D5A936F004AD264 /* Debug */,
+				518A97C52D5A936F004AD264 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		518A97BE2D5A936F004AD264 /* DeviceDatabase.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				518A97BF2D5A936F004AD264 /* WaveScan.xcdatamodel */,
+			);
+			currentVersion = 518A97BF2D5A936F004AD264 /* WaveScan.xcdatamodel */;
+			path = DeviceDatabase.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 518A97A82D5A936E004AD264 /* Project object */;
+}
